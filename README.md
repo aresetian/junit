@@ -1,2 +1,2 @@
 # junit
-It has content test of new feuteres of Junit
+It has content test of new features of Junit
