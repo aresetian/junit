@@ -1,6 +1,7 @@
 package co.knowledgesd.poc.junit;
 
 public class Fibonacci {
+	
     public static int compute(int n) {
         int result = 0;
 
