@@ -6,6 +6,41 @@ import org.junit.rules.ExpectedException;
 import org.junit.rules.Timeout;
 import org.junit.runners.model.TestTimedOutException;
 
+/**
+ * This rules replace the code on every test : 
+ *  
+ * public class BlahTest {
+ * 	@Test(timeout = 1000)
+ * 	public void testA() throws Exception {
+ * 		// ...
+ * 	}
+ * 
+ * 	@Test(timeout = 1000)
+ * 	public void testB() throws Exception {
+ * 		// ...
+ * 	}
+ * 
+ * 	@Test(timeout = 1000)
+ * 	public void testC() throws Exception {
+ * 		// ...
+ * 	}
+ * 
+ * 	@Test(timeout = 1000)
+ * 	public void testD() throws Exception {
+ * 		// ...
+ * 	}
+ * 
+ * 	@Test(timeout = 1000)
+ * 	public void testE() throws Exception {
+ * 		// ...
+ * 	}
+ *  // ...
+ * }
+ * 
+ * 
+ * More info {@link http://carlosbecker.com/posts/junit-rules}
+ * 
+ */
 public class RuleTestTimeOut {
 
 	  @Rule
