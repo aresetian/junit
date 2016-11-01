@@ -1,11 +1,14 @@
 java:
-  java_version: java-6-openjdk
+  java_version: java-7-openjdk
+  maven_version: '3.3'
+  # Typical Java/Maven cache configuration, but include spark installation directory
+cache:
+  key_paths:
+    - first-example/pom.xml
+  save_paths:
+    - HOME/.m2    # Maven cache
 tests:
-  - type: junit
-    mode: parallel
-    output: exit-status
-    files:
-    - include: 'test/*Test.java'
-    command: "bin/solano-runner" 
-    report_files: 
-    - "target/surefire-reports/*.xml"
+  - |
+    cd co.knowledgesd.poc.junit
+    mvn test
+    
