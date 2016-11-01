@@ -1,5 +1,11 @@
 java:
-  java_version: java-7-openjdk
-  maven_version: '3.0.5'  # 2.0, 3.0, 3.1, and 3.2
+  java_version: java-6-openjdk
 tests:
-  - mvn verify
+  - type: junit
+    mode: parallel
+    output: exit-status
+    files:
+    - include: 'test/*Test.java'
+    command: "bin/solano-runner" 
+    report_files: 
+    - "target/surefire-reports/*.xml"
