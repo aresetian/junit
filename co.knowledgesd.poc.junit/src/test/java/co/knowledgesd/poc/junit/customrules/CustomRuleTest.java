@@ -20,6 +20,6 @@ public class CustomRuleTest {
 	    
 	    @Test
 	    public void testRun3(){
-	        System.out.println("Inside testRun3 'Be who you are, not who you think others want you to be'");
+	        System.out.println("Inside testRun3 'Bee who you are, not who you think others want you to be'");
 	    }
 }
