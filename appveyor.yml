@@ -1,3 +1,4 @@
+build: off
 test_script:
   - cd co.knowledgesd.poc.junit
   - mvn test
